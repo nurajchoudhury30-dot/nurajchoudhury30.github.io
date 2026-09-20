@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Enter city name" spellcheck="false">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="weather" id="weather-info" style="display: none;">
+            <h2 id="city-name">--</h2>
+            <h1 id="temp">--°C</h1>
+            <p id="description">--</p>
+            <div class="details">
+                <p>Humidity: <span id="humidity">--</span>%</p>
+                <p>Wind: <span id="wind">--</span> km/h</p>
+            </div>
+        </div>
+
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
